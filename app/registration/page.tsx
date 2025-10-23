@@ -33,8 +33,8 @@ export default function RegistrationPage() {
             </div>
           </div>
 
-          {/* What’s Included */}
-          <h2 className="mt-10 text-2xl font-bold text-gray-900">What’s Included</h2>
+          {/* What's Included */}
+          <h2 className="mt-10 text-2xl font-bold text-gray-900">What's Included</h2>
           <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { t: "Sessions & Materials", d: "Keynotes, plenaries, track sessions, and digital resources." },
@@ -71,7 +71,16 @@ export default function RegistrationPage() {
           </div>
 
           {/* Simple form */}
-          <form className="bg-gray-50 rounded-2xl p-8 shadow">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault()
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdTm6YEFugEDfgIpdGKldhPHQstG0TKsLCkWAH245dRvVCMEA/viewform",
+                "_blank",
+              )
+            }}
+            className="bg-gray-50 rounded-2xl p-8 shadow"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input className="px-4 py-3 rounded-lg border" placeholder="First Name *" />
               <input className="px-4 py-3 rounded-lg border" placeholder="Last Name *" />

@@ -9,8 +9,12 @@ const navItems = [
   { href: "/", label: "HOME" },
   { href: "/about", label: "ABOUT" },
   { href: "/program", label: "PROGRAM" },
+  { href: "/speakers", label: "SPEAKERS" },
   { href: "/registration", label: "REGISTRATION" },
   { href: "/venue", label: "VENUE" },
+  { href: "/news", label: "NEWS" },
+  { href: "/sponsors", label: "SPONSORS" },
+  { href: "/media", label: "MEDIA" },
   { href: "/contact", label: "CONTACT" },
 ]
 
