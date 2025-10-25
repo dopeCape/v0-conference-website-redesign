@@ -58,14 +58,12 @@ export default function ConferencePage() {
           <p className="text-white/95 text-base sm:text-xl md:text-2xl">Global Connections, Collective Growth</p>
 
           <div className="mt-8 flex items-center justify-center gap-4">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdTm6YEFugEDfgIpdGKldhPHQstG0TKsLCkWAH245dRvVCMEA/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/registration"
               className="rounded-full bg-white text-pink-700 px-6 py-3 font-semibold hover:bg-pink-50 transition"
             >
               Register ($150–$200)
-            </a>
+            </Link>
             <Link
               href="/program"
               className="rounded-full bg-pink-600 text-white px-6 py-3 font-semibold hover:bg-pink-700 transition"
