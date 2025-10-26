@@ -39,17 +39,16 @@ export default function ConferencePage() {
         id="home"
         className="relative min-h-[68vh] sm:min-h-[74vh] flex items-center justify-center overflow-hidden"
       >
-        {/* Background with KL skyline image */}
         <img
-          src="/images/hero-kl.png"
-          alt="Kuala Lumpur skyline at dusk with Petronas Towers"
+          src="/images/hero-petronas.png"
+          alt="Petronas Twin Towers at night in Kuala Lumpur"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-pink-600/5 via-pink-500/5 to-rose-400/5"></div>
         <div className="absolute inset-0 bg-black/0"></div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center py-16">
-          <span className="inline-block rounded-full bg-white/70 text-pink-700 px-4 py-1 text-xs sm:text-sm font-semibold mb-4">
+          <span className="inline-block rounded-full bg-white/70 text-pink-700 px-6 py-2 text-sm sm:text-base font-semibold mb-6">
             2026 IAUP Asia Pacific
           </span>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white text-balance mb-3">
@@ -58,12 +57,6 @@ export default function ConferencePage() {
           <p className="text-white/95 text-base sm:text-xl md:text-2xl">Global Connections, Collective Growth</p>
 
           <div className="mt-8 flex items-center justify-center gap-4">
-            <Link
-              href="/registration"
-              className="rounded-full bg-white text-pink-700 px-6 py-3 font-semibold hover:bg-pink-50 transition"
-            >
-              Register ($150–$200)
-            </Link>
             <Link
               href="/program"
               className="rounded-full bg-pink-600 text-white px-6 py-3 font-semibold hover:bg-pink-700 transition"

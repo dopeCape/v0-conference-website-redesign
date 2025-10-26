@@ -11,8 +11,7 @@ export default function RegistrationPage() {
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">Registration</h1>
           <p className="mt-2 text-gray-600">Secure your spot at this landmark event.</p>
 
-          {/* Pricing tiers */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="rounded-2xl p-6 border shadow-sm bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200">
               <h3 className="text-lg font-semibold text-amber-900">Member Rate</h3>
               <p className="text-xs text-amber-700 mt-1">IAUP, AUAP, VCCPU Members</p>
@@ -24,19 +23,10 @@ export default function RegistrationPage() {
               </ul>
             </div>
             <div className="rounded-2xl p-6 border shadow-sm">
-              <h3 className="text-lg font-semibold">Early Bird</h3>
-              <div className="mt-2 text-4xl font-bold text-pink-600">$150</div>
-              <ul className="mt-4 text-gray-700 space-y-2 list-disc pl-5">
-                <li>Access to all sessions</li>
-                <li>Conference kit & materials</li>
-                <li>Welcome reception</li>
-              </ul>
-            </div>
-            <div className="rounded-2xl p-6 border shadow-sm">
               <h3 className="text-lg font-semibold">Standard</h3>
               <div className="mt-2 text-4xl font-bold text-pink-600">$200</div>
               <ul className="mt-4 text-gray-700 space-y-2 list-disc pl-5">
-                <li>All Early Bird benefits</li>
+                <li>All Member Rate benefits</li>
                 <li>IAUP Conference Dinner</li>
                 <li>Priority seating for plenaries</li>
               </ul>
@@ -70,52 +60,19 @@ export default function RegistrationPage() {
             </div>
           </div>
 
-          {/* Registration form */}
-          <form className="bg-gray-50 rounded-2xl p-8 shadow">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Title *</label>
-                <select className="w-full px-4 py-3 rounded-lg border border-gray-300">
-                  <option value="">Select Title</option>
-                  <option value="Mr">Mr</option>
-                  <option value="Mrs">Mrs</option>
-                  <option value="Ms">Ms</option>
-                  <option value="Dr">Dr</option>
-                  <option value="Prof">Prof</option>
-                </select>
-              </div>
-              <div></div>
-            </div>
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input className="px-4 py-3 rounded-lg border" placeholder="First Name *" />
-              <input className="px-4 py-3 rounded-lg border" placeholder="Last Name *" />
-            </div>
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input className="px-4 py-3 rounded-lg border" placeholder="Email *" type="email" />
-              <input className="px-4 py-3 rounded-lg border" placeholder="Mobile Number *" type="tel" />
-            </div>
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input className="px-4 py-3 rounded-lg border" placeholder="Institution *" />
-              <input className="px-4 py-3 rounded-lg border" placeholder="Position *" />
-            </div>
-            <div className="mt-4">
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Photo Upload</label>
-              <input type="file" accept="image/*" className="w-full px-4 py-3 rounded-lg border" />
-            </div>
-            <textarea className="mt-4 w-full px-4 py-3 rounded-lg border" rows={4} placeholder="About Me *" />
+          <div className="flex justify-center mt-10 mb-10">
             <button
-              type="button"
               onClick={() =>
                 window.open(
                   "https://docs.google.com/forms/d/e/1FAIpQLSdTm6YEFugEDfgIpdGKldhPHQstG0TKsLCkWAH245dRvVCMEA/viewform",
                   "_blank",
                 )
               }
-              className="mt-6 w-full bg-pink-600 hover:bg-pink-700 text-white py-3 rounded-lg font-semibold"
+              className="px-8 py-4 bg-pink-600 hover:bg-pink-700 text-white font-semibold rounded-lg text-lg transition"
             >
-              Submit Registration
+              Register Now
             </button>
-          </form>
+          </div>
         </section>
       </main>
     </div>
